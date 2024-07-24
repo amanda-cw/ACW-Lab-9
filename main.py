@@ -3,7 +3,15 @@ def encode(password):
 
     for i in range(len(password)):
         encoded_password += str((int(password[i]) + 3))
+    return encoded_password
 
+#decode added
+def decode(password):
+    decoded_password = []
+    for char in password:
+        newChar = (int(char) - 3)%10
+        decoded_password.append(str(newChar))
+    return "".join(decoded_password)
 
 def main():
     encoded_password = ""
