@@ -27,9 +27,8 @@ def main():
         option = int(input(("Please enter an option: ")))
         if option == 1:
             decoded_password = input("Please enter the password to encode: ")
-            encoded_passord = encode(decoded_password)
+            encoded_password = encode(decoded_password)
             print("Your password has been encoded and stored!")
-            print(encoded_passord)
         elif option == 2:
             continue
         elif option == 3:
