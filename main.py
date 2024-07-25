@@ -13,8 +13,6 @@ def decode(password):
         newChar = (int(char) - 3) % 10
         decoded_password.append(str(newChar))
     return "".join(decoded_password)
-=======
->>>>>>> 05baa4675847aa05a4ac782f03f81d37d4b5fe04
 
 #decode added
 def decode(password):
